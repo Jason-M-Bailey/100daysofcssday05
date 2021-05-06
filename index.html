@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Challenge Day 5</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/cropped-sit-icon-jb.jpg" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- frame is the largest black background box. this has display:flex, align-items:center, justify-content:center - why do the rest of the sections also list these? -->
+    <div class="frame">
+        
+        <!-- center is 2nd largest box, houses all relevant info. defines display: flex for children -->
+        <div class="center">
+            
+            <!-- user houses the left panel, also display: flex; width 60% (60% of 300px = 180px) -->
+            <div class="user">
+                
+                <!-- avatar houses the image and 2 circles. why is avatar width=200px? isn't the width of the user div 180px? -->
+                <div class="avatar">
+                    <!--  -->
+                    <img class="avatar--image" src="./assets/images/profile.jpg"/>
+                    <!-- background=transparent, use border-color to make one segment transparent, position:absolute but no top/bottom/left/right provided? how does it know where to place the circles? -->
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                  </div>
+
+                  <!--  -->
+                  <div class="user--id">
+                      <div class="id--name">Jason Bailey</div>
+                      <div class="id--info">Full Stack Developer</div>
+                  </div>
+
+                  <!--  -->
+                  <form action="https://www.linkedin.com/in/jason-bailey-80b88b16a/" target="_blank">
+                      <input class="user--btn" value="Follow" type="Submit"/>
+                      <input class="user--btn" value="Message" type="Submit"/>
+                  </form>
+              </div>
+
+              <!-- borders created by sections being 1px apart -->
+              <div class="social">
+                  <div class="social--item">
+                      <div class="item--value">523</div>
+                      <div class="item--label">Post</div>					
+                  </div>
+                  <div class="social--item">
+                      <div class="item--value">1387</div>
+                      <div class="item--label">Like</div>
+                  </div>
+                  <div class="social--item">
+                      <div class="item--value">146</div>
+                      <div class="item--label">Followers</div>
+                  </div>
+              </div>
+        </div>
+      </div>
+</body>
+</html>
